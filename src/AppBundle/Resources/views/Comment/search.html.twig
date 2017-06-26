@@ -1,0 +1,12 @@
+{% if users|length > 0 %}
+    {% for user in users %}
+        <tr>
+            <td style="width:150px;">{{ user.login }}</td>
+            <td><a href="{{ path('comment_add', {'login':user.login}) }}">edit</a></td>
+        </tr>
+    {% endfor %}
+{% elseif error %}
+    Impossible de contacter l'API Github
+{% else %}
+    Aucun utilisateur trouvé
+{% endif %}

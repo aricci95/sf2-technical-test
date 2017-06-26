@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                <h1>{{ user.name }}</h1>
+            </div>
+            <div id="next">
+                <img src="{{ user.avatar_url}}" />
+                <h2>Comments</h2>
+                <b>Add</b>
+                {{ form(form) }}
+
+                <b>Previous comments</b>
+                {% if user %}
+                    <ul>
+                        {% for comment in comments %}
+                            <li><b>Posted on {{ comment.createdAt|date("d/m/Y H:i") }}</b> for repo <i>{{ comment.repo }}</i> : {{ comment.content }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    User does not have posted any comment yet.
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

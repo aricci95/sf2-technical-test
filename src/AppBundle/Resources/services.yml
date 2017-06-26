@@ -1,0 +1,7 @@
+services:
+    stadline.form_type.comment:
+        class: AppBundle\Form\CommentType
+        tags:
+            - { name: form.type, alias: comment }
+        arguments:
+            - '@github.client'

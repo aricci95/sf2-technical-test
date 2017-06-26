@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Test technique Antoine RICCI{% endblock %}</title>
+        {% block stylesheets %}
+            {% stylesheets
+                '@AppBundle/Resources/public/css/stadline.css'
+            %}
+                <link href="{{ asset_url }}" media="screen" rel="stylesheet" type="text/css"/>
+            {% endstylesheets %}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div class="masthead inline-header right dt-parent-menu-clickable" role="banner">
+
+            <div class="top-bar">
+            <div class="mini-widgets"></div>                    </div>
+    <header class="header-bar">
+
+        <div class="liens_top">
+            <a href="/contact-devis/" title="Devis pour un logiciels sport développé par StadLine" rel="">TEST TECHNIQUE</a>
+            <a href="/logout" title="Contactez StadLine, développement de logiciels et d'application pour le sport" rel="">Deconnexion</a></div>
+
+                        <div class="branding">
+
+                    <a href="http://www.stadline.com/"><img class=" preload-me" src="http://www.stadline.com/wp-content/uploads/2016/07/LOG_STADLINE_PNG-copie.png" srcset="http://www.stadline.com/wp-content/uploads/2016/07/LOG_STADLINE_PNG-copie.png 780w, http://www.stadline.com/wp-content/uploads/2016/07/LOG_STADLINE_PNG-copie.png 780w" width="780" height="196" sizes="780px" alt="Stadline"></a>
+                    <div id="site-title" class="assistive-text">Stadline</div>
+                    <div id="site-description" class="assistive-text">Informatique sport Internet, logiciels et développements</div>
+
+                    
+                    
+                </div>
+        <ul class="main-nav underline-decoration downwards-line" role="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52 first"><a href="http://www.stadline.com/" title="Decouvrez le groupe Stadline. Editeur de logiciels dedié aux club de sport, de fitness et aux fédérations sportives." data-level="1"><span class="menu-item-text"><span class="menu-text">ACCUEIL</span></span></a></li> <li class="clikable menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-50 has-children dt-mega-menu mega-full-width mega-column-3"><a href="http://www.stadline.com/logiciels-sport/" title="Resamania, Extraclub et Heva. Logiciels pour le sport édités par StadLine" data-level="1"><span class="menu-item-text"><span class="menu-text">NOS PRODUITS</span></span></a><i class="next-level-button"></i><div class="dt-mega-menu-wrap" style="left: -321.047px; width: 1170px; visibility: hidden; opacity: 0;"><ul class="sub-nav hover-style-click-bg"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69 first no-link dt-mega-parent wf-1-3"><a href="http://www.resamania.fr/" title="Résamania le logiciel fitness du groupe StadLine" target="_blank" data-level="2" class="ripple" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="text-wrap" style="position: relative; z-index: 2;"><span class="menu-item-text"><span class="menu-text"><center><img src="http://www.stadline.com/wp-content/uploads/2016/06/RESAMANIA.png" alt="Logiciel gestion salles de fitness"><br>Le logiciel de gestion<br>de salle de fitness</center></span></span></span><span class="rippleWrap" style="position: absolute; z-index: 1; left: 0px; top: 0px; overflow: hidden; border-radius: 0px; opacity: 1; transition: none;"><span class="rippleAnimate" style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; border-radius: 50%; transform: scale3d(0, 0, 1); transition: none;"></span></span></a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68 no-link dt-mega-parent wf-1-3"><a href="http://www.extraclub.fr/" title="ExtraClub le logiciel de gestion de club de sport du groupe StadLine" target="_blank" data-level="2" class="ripple" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="text-wrap" style="position: relative; z-index: 2;"><span class="menu-item-text"><span class="menu-text"><center><img src="http://www.stadline.com/wp-content/uploads/2016/06/EXTRACLUB.png" alt="Logiciel gestion clubs de sport"><br>Le logiciel de gestion<br>de club multisport</center></span></span></span><span class="rippleWrap" style="position: absolute; z-index: 1; left: 0px; top: 0px; overflow: hidden; border-radius: 0px;"><span class="rippleAnimate" style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; border-radius: 50%;"></span></span></a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70 no-link dt-mega-parent wf-1-3"><a href="http://www.heva-federations.fr/" title="Heva le logiciel de gestion de federation de sport du groupe StadLine" target="_blank" data-level="2" class="ripple" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="text-wrap" style="position: relative; z-index: 2;"><span class="menu-item-text"><span class="menu-text"><center><img src="http://www.stadline.com/wp-content/uploads/2016/06/HEVA.png" alt="Logiciel gestion fédérations sportives"><br>Le logiciel de gestion<br>de fédération</center></span></span></span><span class="rippleWrap" style="position: absolute; z-index: 1; left: 0px; top: 0px; overflow: hidden; border-radius: 0px;"><span class="rippleAnimate" style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; border-radius: 50%;"></span></span></a></li> </ul></div></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="http://www.stadline.com/valeurs-sport-developpement/" title="L’équipe Stadline, son histoire, ses valeurs et ses offres de recrutement." data-level="1"><span class="menu-item-text"><span class="menu-text">LE GROUPE</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-37 current_page_item menu-item-48 act"><a href="http://www.stadline.com/references-sport-projet/" title="Les références du groupe Stadline, les témoignages de ses clients ainsi que ses partenaires." data-level="1"><span class="menu-item-text"><span class="menu-text">NOS EXPÉRIENCES</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="http://www.stadline.com/projets-sur-mesure-sport/" title="Solution de gestion reservation sport sur mesure" data-level="1"><span class="menu-item-text"><span class="menu-text">PROJET SUR MESURE</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="http://www.stadline.com/actualites/" title="Les actualités du groupe Stadline et de ses logiciels Resamania, Extraclub et Heva." data-level="1"><span class="menu-item-text"><span class="menu-text">ACTUALITÉS</span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="http://www.stadline.com/contact/" title="Formulaire de contact de StadLine, développement de logiciels et d’application pour le sport" data-level="1"><span class="menu-item-text"><span class="menu-text">CONTACT</span></span></a></li> </ul>
+        
+    </header>
+
+<div class="mobile-header-bar"><div class="mobile-navigation"><a href="#" class="dt-mobile-menu-icon"><span class="lines"></span></a></div><div class="mobile-mini-widgets"></div><div class="mobile-branding"><a href="http://www.stadline.com/"><img class=" preload-me" src="http://www.stadline.com/wp-content/uploads/2016/07/LOG_STADLINE_PNG-copie.png" srcset="http://www.stadline.com/wp-content/uploads/2016/07/LOG_STADLINE_PNG-copie.png 780w, http://www.stadline.com/wp-content/uploads/2016/07/LOG_STADLINE_PNG-copie.png 780w" width="780" height="196" sizes="780px" alt="Stadline"></a></div></div></div>
+        
+
+<div style="height:800px;padding:10px;overflow-y: scroll;">
+        {% block body %}{% endblock %}
+</div>
+        
+
+
+
+
+        <div class="besoin orange" style="position: relative; bottom: 0px;">
+    <div class="div_picto_contact vc_col-sm-3">   
+        <div class="sticky" style="display: none;">
+            <p>Besoin d'un conseil ? <i class="fa fa-angle-down"></i></p>
+        </div>
+
+        <div class="div_img_pictos vc_col-sm-6">
+            <div class="wpb_single_image img_pictos">    
+                <a href="tel:0320988496" target="_self" class="vc_single_image-wrapper">
+                    <img src="http://www.stadline.com/wp-content/themes/stadline/images/pictos/phone-orange.svg" alt="Téléphoner à StadLine développement logiciel sport" title="Téléphoner à StadLine développement logiciel sport">
+                </a>
+            </div>
+        </div>
+        <div class="div_text_pictos vc_col-sm-6">
+
+            <div class="titre_pictos">
+                                    <a href="tel:0320988496" title="Appeler StadLine développement logiciel sport">Votre futur développeur</a>
+                            </div>
+
+            <div class="tel_pictos t">
+                                    <a href="tel:0320988496" title="Numéro de StadLine développement logiciel sport">07.86.72.96.83</a>
+                                
+            </div>
+
+            <div class="info_tel_pictos">
+                <p>(prix d’un appel local)</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="div_picto_contact   vc_col-sm-3">
+        <div class="div_img_pictos vc_col-sm-6">
+            <div class="wpb_single_image  img_pictos">
+                <a href="/contact-rappel/" target="_self" class="vc_single_image-wrapper" rel="">
+                    <img src="http://www.stadline.com/wp-content/themes/stadline/images/pictos/talk-orange.svg" class="vc_single_image-img attachment-full" alt="Être rappelé par StadLine développement logiciel sport" title="Être rappelé par StadLine développement logiciel sport">
+                </a>
+            </div>
+        </div>
+        <div class="div_text_pictos   vc_col-sm-6">
+            <div class="titre_pictos">
+                <div class="wpb_wrapper">
+                    <a href="/contact-rappel/" title="Rappel de StadLine développement logiciel sport" rel="">Antoine Ricci</a>
+
+                </div>
+            </div>
+
+
+            <div class="tel_pictos">
+                <a href="/contact-rappel/" title="StadLine développement logiciel sport vous rappelle" rel="">vous rappelle</a>
+            </div>
+        </div>
+    </div>
+    <div class="div_picto_contact vc_col-sm-3">
+
+        <div class="div_img_pictos vc_col-sm-6">
+            <div class="wpb_single_image img_pictos">
+
+                <a href="/contact-devis/" target="_self" class="vc_single_image-wrapper" rel="">
+                    <img src="http://www.stadline.com/wp-content/themes/stadline/images/pictos/devis-orange.svg" class="vc_single_image-img attachment-full" alt="Obtenir un devis de StadLine développement logiciel sport" title="Obtenir un devis de StadLine développement logiciel sport">
+                </a>
+
+            </div>
+
+        </div><div class="div_text_pictos  vc_col-sm-6">
+            <div class="titre_pictos">
+
+                <a href="/contact-devis/" title="Demander un devis de StadLine développement logiciel sport" rel="">Me répondre</a>
+
+            </div>
+
+
+            <div class="tel_pictos">
+                <a href="mailto:aricci95@gmail.com" title="Devis de StadLine développement logiciel sport" rel="">Par mail</a>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="div_picto_social  vc_col-sm-3">
+        <div class=" vc_col-sm-4">
+
+            <div class="wpb_single_image linkedin_1">
+                <a href="https://www.linkedin.com/in/antoine-ricci-a498b627/?ppe=1" target="_blank" class="vc_single_image-wrapper ">
+                    <img width="30" height="29" src="http://www.stadline.com/wp-content/themes/stadline/images/pictos/linkedin-black.png" alt="Linkedin de StadLine développement logiciel sport" title="Linkedin de StadLine développement logiciel sport">
+                </a>
+            </div>
+
+        </div>
+        </div>
+    </div>
+</div>
+
+
+        <footer id="footer" class="footer solid-bg">
+
+        
+            <div class="wf-wrap">
+                <div class="wf-container-footer">
+                    <div class="wf-container">
+
+                        <section id="text-3" class="widget widget_text wf-cell wf-1-4">         <div class="textwidget"><div id="branding-bottom" class="wf-td"><a href="http://www.stadline.com/"><img class=" preload-me" src="http://www.stadline.com/wp-content/uploads/2016/06/logof.png" srcset="http://www.stadline.com/wp-content/uploads/2016/06/logof.png 190w, http://www.stadline.com/wp-content/uploads/2016/06/logof.png 190w" width="190" height="48" sizes="190px" alt="StadLine développement application sport" title="StadLine développement application sport"></a></div></div>
+        </section><section id="nav_menu-2" class="widget widget_nav_menu wf-cell wf-1-4"><div class="widget-title">Les offres</div><div class="menu-les-offres-container"><ul id="menu-les-offres" class="menu"><li id="menu-item-60" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-60"><a title="Résamania le logiciel fitness du groupe StadLine" href="http://www.resamania.fr/">Resamania</a></li>
+<li id="menu-item-59" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59"><a title="ExtraClub le logiciel de gestion de club de sport du groupe StadLine" href="http://www.extraclub.fr/">Extraclub</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a title="Le logiciel de gestion de federation de sport du groupe StadLine" href="http://www.heva-federations.fr/">Heva</a></li>
+<li id="menu-item-62" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62"><a title="Projet de développement sur mesure pour le sport du groupe StadLine" href="/projets-sur-mesure-sport/">Projet sur mesure</a></li>
+<li id="menu-item-1576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1576"><a title="Mentions légales du site Internet du groupe StadLine, éditeur de logiciel pour le sport" rel="nofollow" href="http://www.stadline.com/mentions-legales/">Mentions légales</a></li>
+</ul></div></section><section id="text-4" class="widget widget_text wf-cell wf-1-4">            <div class="textwidget"><div class="">
+Agence Lille Métropole<br>
+41 Rue du Général de Gaulle<br>
+59110 La Madeleine<br>
+Tél.: (33) 03.20.98.84.96<br>
+Fax: (33) 03.20.73.99.49<br><br>
+
+Agence Paris Ile de France<br>
+78 rue championnet<br>
+75018 Paris <br>
+Tél.: (33) 01.84.17.33.70<br>
+</div></div>
+        </section>
+                    </div><!-- .wf-container -->
+                </div><!-- .wf-container-footer -->
+            </div><!-- .wf-wrap -->
+
+        
+<!-- !Bottom-bar -->
+<div id="bottom-bar" class="solid-bg" role="contentinfo">
+    <div class="wf-wrap">
+        <div class="wf-container-bottom">
+            <div class="wf-table wf-mobile-collapsed">
+
+                
+                    <div class="wf-td">
+                        <div class="wf-float-left">
+
+                            Développement informatique web sport, Développement informatique internet sport, Application mobile sport, Editeur sport,  Solution informatique sport, Projet Internet sport, Objet connecté sport, Contrôle d'accès sport, Projet informatique sur-mesure sport, Gestion de projet informatique sport, Big Data sport, Solution sur-mesure sport, Objet connecté santé, Solution informatique connectée et sur-mesure - <a href="/wp-admin/" title="Administration du site Internet du groupe StadLine, éditeur de logiciel pour le sport" rel="nofollow">Administration</a> - <a href="/plan-du-site/" title="Plan du site Internet du groupe StadLine, éditeur de logiciel pour le sport">Plan du site</a> - <a href="http://www.stadline.com/mentions-legales/" title="Mentions légales du site Internet du groupe StadLine, éditeur de logiciel pour le sport" rel="nofollow">Mentions légales</a>
+                        </div>
+                    </div>
+
+                
+                <div class="wf-td">
+
+                    
+                </div>
+
+                
+            </div>
+        </div><!-- .wf-container-bottom -->
+    </div><!-- .wf-wrap -->
+</div><!-- #bottom-bar -->
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+    {% javascripts
+    'https://code.jquery.com/jquery-3.2.1.min.js'
+    '@AppBundle/Resources/public/js/comment.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                <h1>GIT Users</h1>
+            </div>
+            {% for flashMessage in app.session.flashbag.get('error') %}
+                <span style="color:red;">{{ flashMessage }}</span>
+            {% endfor %}
+            {% for flashMessage in app.session.flashbag.get('notice') %}
+                <span style="color:green;">{{ flashMessage }}</span>
+            {% endfor %}
+            <div id="next">
+                <form id="search_form">
+                    <input id="search_login" placeholder="search users ..."></input>
+                    <input id="search_submit" type="submit"></input>
+                </form>
+                <p>
+                    <table>
+                        <tbody id="user_list"></tbody>
+                    </table>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
