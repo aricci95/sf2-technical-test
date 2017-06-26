@@ -1,34 +1,3 @@
-# StadLine Technical Test
-
-### Auteur
-
-Antoine RICCI (aricci95@gmail.com)
-
-### Temps passé
-
-Plus ou moins 4 heures.
-
-
-### Config
-Générer un token api github -> https://github.com/settings/tokens/new
-ajouter dans parameters.yml, example -> github_api_token: '38a5dfeac4c6e2bddd9a44b58bd607cc0065bd1e'
-
-### Test Account
-
-stadline / testtest
-
-### Database
-
-Run la synchro Symfony Doctrine : bin/console doctrine:schema:update --force
-
-Inserer le compte de test :
-
-INSERT INTO `user` (`id`,`username`,`username_canonical`,`email`,`email_canonical`,`enabled`,`salt`,`password`,`last_login`,`confirmation_token`,`password_requested_at`,`roles`,`first_name`,`last_name`) VALUES (3,'stadline','stadline','stadline@gmail.com','stadline@gmail.com',1,NULL,'$2y$13$OzIcOj9m40LO3RHmqZjJVuiIP2Nsc4o9oQTH2i66TY9JUGcuRcRyS','2017-06-26 15:16:13',NULL,NULL,'a:2:{i:0;s:5:\"ADMIN\";i:1;s:10:\"ROLE_ADMIN\";}','','');
-
-### Historique GIT
-
-J'ai directement cloné votre repo au lieu de le fork, du coup quand j'ai voulu pusher sur master bien évidemment il m'a refusé, pour ne pas perdre l'historique des commits je vous le colle ici (également dispo dans git_history.txt):
-
 commit 6f750ff937d7a719b3fba14f60ae6d506e22844d
 Author: Antoine Ricci <aricci@molotov.tv>
 Date:   Mon Jun 26 17:49:04 2017 +0200
@@ -212,4 +181,4 @@ A       web/app_dev.php
 A       web/apple-touch-icon.png
 A       web/config.php
 A       web/favicon.ico
-A       web/robots.txt  
+A       web/robots.txt
